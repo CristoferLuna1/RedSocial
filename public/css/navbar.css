@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;  /* Ajustar al 90% del ancho de la pantalla */
+    max-width: 1200px;  /* Para limitar el tamaño máximo */
+}
+
+.navbar-item {
+    margin: 0 20px;
+    color: #00ffff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+
+.navbar-item i {
+    margin-right: 8px;
+}
+
+.navbar-item:hover {
+    background-color: #575757;
+    border-radius: 4px;
+    padding: 5px 10px;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #00ffff;
+    border-radius: 4px 0 0 4px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.search-button {
+    padding: 5px 10px;
+    border: 1px solid #00ffff;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #00ffff;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-name {
+    margin-right: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #24243e;
+    color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    padding-top: 60px;
+}
